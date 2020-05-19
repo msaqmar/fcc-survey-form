@@ -1,0 +1,105 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>survey</title>
+    </head>
+
+<style>
+
+#title{
+  background-color: black;
+  color: white;
+  font-size: 50px;
+  padding: 10px;
+  text-align: center;
+}
+#description{
+  text-align: center;
+}
+#main{
+  background-color: #D3D3D3;
+}
+#survey-form{
+  background-color: black;
+  color: white;
+  margin: auto;
+  text-align: left;
+  width: 50%;
+  display: block;
+  padding: 25px;
+
+}
+#name,#email,#number,#dropdown{
+  font-size: 25px;
+  margin: 10px;
+  width:95%;
+  border: none;
+  background-color: black;
+  color: white;
+
+}
+#submit{
+  margin: auto;
+  font-size: 25px;
+}
+#txt{
+  background-color: black;
+  color: white;
+}
+
+</style>
+
+  <body id="main">
+    <h1 id="title">Survey form project</h1>
+    <p id="description"><i>Thank you for taking the time to help us improve the platform</i></p><br><br>
+    <form id="survey-form">
+      <label id="name-label" style="font-size: 25px;">Name: </label><br>
+      <input type="text" name="name" placeholder="Enter your name" id="name" required><hr><br>
+      <label id="email-label" style="font-size: 25px;">E-mail id: </label><br>
+      <input type="email" name="email" placeholder="Enter your email" id="email" required><br><hr><br>
+      <label id="number-label" style="font-size: 25px;">Mobile number: </label><br>
+      <input type="number" name="number" placeholder="Enter your mobile number" id="number" min=7000000000 max=9999999999 required><br><hr><br>
+      <label id="dropdown-label" style="font-size: 25px;" >Which option best describes your current role? </label><br>
+      <select id="dropdown" >
+        <option value="" selected data-default>select your role</option>
+        <option value="student">Student</option>
+        <option value="job">Full time Job</option>
+        <option value="learner">Full time learner</option>
+        <option value="notprefer">Not prefer to say</option>
+        <option value="other">Others</option>
+
+      </select><br><hr><br>
+     <label id="radio-label" style="font-size: 25px;" >Would you recommend freeCodeCamp to a friend?</label><br><br>
+      <input type="radio" value="yes" name="option">Yeah, sure<br>
+      <input type="radio" value="no" name="option">Not really<br>
+      <input type="radio" value="other" name="option">other<br><br><hr><br>
+
+       <label id="checkbox-label" style="font-size: 25px;" >What would you like to see improved?</label><br><br>
+      <input type="checkbox" value="front-end">Front-End projects<br>
+      <input type="checkbox" value="back-end">Back-End projects<br>
+      <input type="checkbox" value="jscript">JavaScript projects<br>
+      <input type="checkbox" value="html">HTML projects<br><br><hr>
+
+      <label style="font-size: 25px;" >What would you like to see improved?</label><br><br>
+      <textarea id="txt" rows="10" cols="95%" placeholder="write your comments" form="survey-form"></textarea><br><br><hr><br>
+
+
+<button type="submit" form="survey-form" value="Submit" id="submit">Submit</button>
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
